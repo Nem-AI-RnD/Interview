@@ -3,15 +3,6 @@ import numpy as np
 import pandas as pd
 from scipy.special import expit
 from scipy.optimize import root_scalar
-from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder, StandardScaler, FunctionTransformer
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report
-from sklearn.utils.class_weight import compute_sample_weight
-
 
 class SpamDatasetGenerator:
     """
