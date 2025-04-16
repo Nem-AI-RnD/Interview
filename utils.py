@@ -4,7 +4,7 @@ import pandas as pd
 from scipy.special import expit
 from scipy.optimize import root_scalar
 
-class SpamDatasetGenerator:
+class SpamDataset:
     """
     A class to generate a synthetic dataset for a spam classification task.
 
@@ -40,7 +40,7 @@ class SpamDatasetGenerator:
 
     def __init__(
         self,
-        n_samples: int = 1000,
+        n_samples: int = 10000,
         random_state: Union[int, None] = 42,
         spam_ratio: float = 0.05,
     ) -> None:
@@ -241,7 +241,7 @@ class SpamDatasetGenerator:
         target_series = target_series.astype("Int64")
         return target_series
 
-    def generate_dataset(
+    def load_dataset(
         self, na_ratio_for_non_spam: float = 0.0
     ) -> Tuple[pd.DataFrame, pd.Series]:
         """

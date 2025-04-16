@@ -175,3 +175,7 @@ cython_debug/
 
 .python-version
 uv.lock
+
+Data_Science_Interview_Questions.pdf
+Coding.ipynb
+utils_solution.py

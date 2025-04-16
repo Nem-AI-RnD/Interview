@@ -13,7 +13,7 @@ from sklearn.metrics import classification_report
 from sklearn.utils.class_weight import compute_sample_weight
 
 
-class SpamDatasetGenerator:
+class SpamDataset:
     """
     A class to generate a synthetic dataset for a spam classification task.
 
@@ -250,7 +250,7 @@ class SpamDatasetGenerator:
         target_series = target_series.astype("Int64")
         return target_series
 
-    def generate_dataset(
+    def load_dataset(
         self, na_ratio_for_non_spam: float = 0.0
     ) -> Tuple[pd.DataFrame, pd.Series]:
         """
