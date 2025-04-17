@@ -4,6 +4,7 @@ import pandas as pd
 from scipy.special import expit
 from scipy.optimize import root_scalar
 
+
 class SpamDataset:
     """
     A class to generate a synthetic dataset for a spam classification task.
@@ -24,10 +25,10 @@ class SpamDataset:
                        are more frequently associated with spam.
       - email_client: The client or platform used to send or view
                       the email (e.g., Web, Mobile, Desktop, Other).
-      - suspicion_score: An ordinal measure (scale 1-5) indicating how
+      - suspicion_score: A score (scale 1-5) indicating how
                          suspicious the email appears. Higher scores suggest greater
                          suspicion.
-      - urgency_level: An ordinal measure (scale 1-5) representing how
+      - urgency_level: A score (scale 1-5) representing how
                        urgent the email appears. Spam emails may exaggerate urgency
                        to provoke a quick reaction.
       - subject: The subject line of the email. Spam emails often use
