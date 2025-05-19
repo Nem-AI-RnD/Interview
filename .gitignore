@@ -176,12 +176,13 @@ cython_debug/
 .python-version
 uv.lock
 
-Data_Science_Interview.pdf
+Data_Science_Interview_Questions.pdf
 Coding.ipynb
 utils_solution.py
 
 Coding_Solution_Proposal.ipynb
-Coding_task.ipynb
+# Coding_task.ipynb
 Data_Science_Task.ipynb
+Data_Science1.ipynb
 utils_full.py
 Solutions___Data_Science_Interview_Questions.pdf
